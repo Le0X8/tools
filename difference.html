@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculate date difference</title>
 </head>
-<body></body>
+<body>
+    <h1>Calculate date difference</h1>
+    <label for="date-1">Date 1: </label><input type="date" id="date-1"><br>
+    <label for="date-2">Date 2:</label><input type="date-2"><br>
+    <button onclick="calculate()">Calculate</button>
+    <br>
+    <label for="result">Result: </label><br>
+    <textarea id="result" disabled></textarea>
+    <script>
+        const d1 = document.getElementById('date-1');
+        const d2 = document.getElementById('date-2');
+        const r = document.getElementById('result');
+
+        const calculate = () => {
+            const d1v = d1.valueAsDate;
+            const d2v = d2.valueAsDate;
+            const d = d2v - d1v;
+            r.value = Math.floor(d / (1000 * 60 * 60 * 24)) + 'd ';
+        };
+    </script>
 </body>
 </html>
