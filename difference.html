@@ -22,7 +22,7 @@
             const d1v = d1.valueAsDate;
             const d2v = d2.valueAsDate;
             const d = d2v - d1v;
-            r.value = Math.floor(d / (1000 * 60 * 60 * 24)) + 'd ';
+            r.value = Math.abs(Math.floor(d / (1000 * 60 * 60 * 24))) + 'd ';
         };
     </script>
 </body>
