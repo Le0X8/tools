@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File size calculator</title>
+</head>
+<body>
+    <h1>File size calculator</h1>
+    <p>This tool allows you to calculate the size of files in all common and even some uncommon units.</p>
+
+    <h2>Upload</h2>
+    <label for="upload">Upload your file here:</label> <input type="file" id="upload">
+
+    <h2>Result</h2>
+    <h3 id="bitd">Bits (decimal prefixes)</h3>
+    <p><b>Jump to:</b><br><a href="#bitb">Bits (binary prefixes)</a><br><a href="#bd">Bytes (decimal prefixes)</a><br><a href="#bb">Bytes (binary prefixes)</a></p>
+    <table>
+        <tr><th>Bits (bit)</th><td id="bit">0</td></tr>
+        <tr><th>Decabits (dabit)</th><td id="dabit">0</td></tr>
+        <tr><th>Hectobits (hbit)</th><td id="hbit">0</td></tr>
+        <tr><th>Kilobits (kbit)</th><td id="kbit">0</td></tr>
+        <tr><th>Megabits (Mbit)</th><td id="mbit">0</td></tr>
+        <tr><th>Gigabits (Gbit)</th><td id="gbit">0</td></tr>
+        <tr><th>Terabits (Tbit)</th><td id="tbit">0</td></tr>
+        <tr><th>Petabits (Pbit)</th><td id="pbit">0</td></tr>
+        <tr><th>Exabits (Ebit)</th><td id="ebit">0</td></tr>
+        <tr><th>Zettabits (Zbit)</th><td id="zbit">0</td></tr>
+        <tr><th>Yottabits (Ybit)</th><td id="ybit">0</td></tr>
+        <tr><th>Ronnabits (Rbit)</th><td id="rbit">0</td></tr>
+        <tr><th>Quettabits (Qbit)</th><td id="qbit">0</td></tr>
+    </table>
+
+    <h3 id="bitb">Bits (binary prefixes)</h3>
+    <p><b>Jump to:</b><br><a href="#bitd">Bits (decimal prefixes)</a><br><a href="#bd">Bytes (decimal prefixes)</a><br><a href="#bb">Bytes (binary prefixes)</a></p>
+    <table>
+        <tr><th>Bits (bit)</th><td id="bit">0</td></tr>
+        <tr><th>Kibibits (Kibit)</th><td id="kibit">0</td></tr>
+        <tr><th>Mebibits (Mibit)</th><td id="mibit">0</td></tr>
+        <tr><th>Gibibits (Gibit)</th><td id="gibit">0</td></tr>
+        <tr><th>Tebibits (Tibit)</th><td id="tibit">0</td></tr>
+        <tr><th>Pebibits (Pibit)</th><td id="pibit">0</td></tr>
+        <tr><th>Exbibits (Eibit)</th><td id="eibit">0</td></tr>
+        <tr><th>Zebibits (Zibit)</th><td id="zibit">0</td></tr>
+        <tr><th>Yobibits (Yibit)</th><td id="yibit">0</td></tr>
+        <tr><th>Robibits (Ribit)</th><td id="ribit">0</td></tr>
+        <tr><th>Qubibits (Qibit)</th><td id="qibit">0</td></tr>
+    </table>
+
+    <h3 id="bd">Bytes (decimal prefixes)</h3>
+    <p><b>Jump to:</b><br><a href="#bitd">Bits (decimal prefixes)</a><br><a href="#bitb">Bits (binary prefixes)</a><br><a href="#bb">Bytes (binary prefixes)</a></p>
+    <table>
+        <tr><th>Bytes (B)</th><td id="b">0</td></tr>
+        <tr><th>Decabytes (daB)</th><td id="dab">0</td></tr>
+        <tr><th>Hectobytes (hB)</th><td id="hb">0</td></tr>
+        <tr><th>Kilobytes (kB)</th><td id="kb">0</td></tr>
+        <tr><th>Megabytes (MB)</th><td id="mb">0</td></tr>
+        <tr><th>Gigabytes (GB)</th><td id="gb">0</td></tr>
+        <tr><th>Terabytes (TB)</th><td id="tb">0</td></tr>
+        <tr><th>Petabytes (PB)</th><td id="pb">0</td></tr>
+        <tr><th>Exabytes (EB)</th><td id="eb">0</td></tr>
+        <tr><th>Zettabytes (ZB)</th><td id="zb">0</td></tr>
+        <tr><th>Yottabytes (YB)</th><td id="yb">0</td></tr>
+        <tr><th>Ronnabytes (RB)</th><td id="rb">0</td></tr>
+        <tr><th>Quettabytes (QB)</th><td id="qb">0</td></tr>
+    </table>
+
+    <h3 id="bb">Bytes (binary prefixes)</h3>
+    <p><b>Jump to:</b><br><a href="#bitd">Bits (decimal prefixes)</a><br><a href="#bitb">Bits (binary prefixes)</a><br><a href="#bd">Bytes (decimal prefixes)</a></p>
+    <table>
+        <tr><th>Bytes (B)</th><td id="b">0</td></tr>
+        <tr><th>Kibibytes (KiB)</th><td id="kib">0</td></tr>
+        <tr><th>Mebibytes (MiB)</th><td id="mib">0</td></tr>
+        <tr><th>Gibibytes (GiB)</th><td id="gib">0</td></tr>
+        <tr><th>Tebibytes (TiB)</th><td id="tib">0</td></tr>
+        <tr><th>Pebibytes (PiB)</th><td id="pib">0</td></tr>
+        <tr><th>Exbibytes (EiB)</th><td id="eib">0</td></tr>
+        <tr><th>Zebibytes (ZiB)</th><td id="zib">0</td></tr>
+        <tr><th>Yobibytes (YiB)</th><td id="yib">0</td></tr>
+        <tr><th>Robibytes (RiB)</th><td id="rib">0</td></tr>
+        <tr><th>Qubibytes (QiB)</th><td id="qib">0</td></tr>
+    </table>
+    
+    <script>
+        const upload = document.getElementById('upload');
+        const units = {
+            bit: document.getElementById('bit'),
+            dabit: document.getElementById('dabit'),
+            hbit: document.getElementById('hbit'),
+            kbit: document.getElementById('kbit'),
+            mbit: document.getElementById('mbit'),
+            gbit: document.getElementById('gbit'),
+            tbit: document.getElementById('tbit'),
+            pbit: document.getElementById('pbit'),
+            ebit: document.getElementById('ebit'),
+            zbit: document.getElementById('zbit'),
+            ybit: document.getElementById('ybit'),
+            rbit: document.getElementById('rbit'),
+            qbit: document.getElementById('qbit'),
+
+            kibit: document.getElementById('kibit'),
+            mibit: document.getElementById('mibit'),
+            gibit: document.getElementById('gibit'),
+            tibit: document.getElementById('tibit'),
+            pibit: document.getElementById('pibit'),
+            eibit: document.getElementById('eibit'),
+            zibit: document.getElementById('zibit'),
+            yibit: document.getElementById('yibit'),
+            ribit: document.getElementById('ribit'),
+            qibit: document.getElementById('qibit'),
+
+            b: document.getElementById('b'),
+            dab: document.getElementById('dab'),
+            hb: document.getElementById('hb'),
+            kb: document.getElementById('kb'),
+            mb: document.getElementById('mb'),
+            gb: document.getElementById('gb'),
+            tb: document.getElementById('tb'),
+            pb: document.getElementById('pb'),
+            eb: document.getElementById('eb'),
+            zb: document.getElementById('zb'),
+            yb: document.getElementById('yb'),
+            rb: document.getElementById('rb'),
+            qb: document.getElementById('qb'),
+
+            kib: document.getElementById('kib'),
+            mib: document.getElementById('mib'),
+            gib: document.getElementById('gib'),
+            tib: document.getElementById('tib'),
+            pib: document.getElementById('pib'),
+            eib: document.getElementById('eib'),
+            zib: document.getElementById('zib'),
+            yib: document.getElementById('yib'),
+            rib: document.getElementById('rib'),
+            qib: document.getElementById('qib')
+        };
+
+        upload.onchange = (ev) => {
+            const size = ev.target.files[0].size;
+
+            const bit = size * 8;
+            const dabit = bit / (10 ** 1);
+            const hbit = bit / (10 ** 2);
+            const kbit = bit / (10 ** 3);
+            const mbit = bit / (10 ** 6);
+            const gbit = bit / (10 ** 9);
+            const tbit = bit / (10 ** 12);
+            const pbit = bit / (10 ** 15);
+            const ebit = bit / (10 ** 18);
+            const zbit = bit / (10 ** 21);
+            const ybit = bit / (10 ** 24);
+            const rbit = bit / (10 ** 27);
+            const qbit = bit / (10 ** 30);
+
+            const kibit = bit / (2 ** 10);
+            const mibit = bit / (2 ** 20);
+            const gibit = bit / (2 ** 30);
+            const tibit = bit / (2 ** 40);
+            const pibit = bit / (2 ** 50);
+            const eibit = bit / (2 ** 60);
+            const zibit = bit / (2 ** 70);
+            const yibit = bit / (2 ** 80);
+            const ribit = bit / (2 ** 90);
+            const qibit = bit / (2 ** 100);
+
+            const b = size;
+            const dab = b / (10 ** 1);
+            const hb = b / (10 ** 2);
+            const kb = b / (10 ** 3);
+            const mb = b / (10 ** 6);
+            const gb = b / (10 ** 9);
+            const tb = b / (10 ** 12);
+            const pb = b / (10 ** 15);
+            const eb = b / (10 ** 18);
+            const zb = b / (10 ** 21);
+            const yb = b / (10 ** 24);
+            const rb = b / (10 ** 27);
+            const qb = b / (10 ** 30);
+
+            const kib = b / (2 ** 10);
+            const mib = b / (2 ** 20);
+            const gib = b / (2 ** 30);
+            const tib = b / (2 ** 40);
+            const pib = b / (2 ** 50);
+            const eib = b / (2 ** 60);
+            const zib = b / (2 ** 70);
+            const yib = b / (2 ** 80);
+            const rib = b / (2 ** 90);
+            const qib = b / (2 ** 100);
+
+            units.bit.innerHTML = bit;
+            units.dabit.innerHTML = dabit;
+            units.hbit.innerHTML = hbit;
+            units.kbit.innerHTML = kbit;
+            units.mbit.innerHTML = mbit;
+            units.gbit.innerHTML = gbit;
+            units.tbit.innerHTML = tbit;
+            units.pbit.innerHTML = pbit;
+            units.ebit.innerHTML = ebit;
+            units.zbit.innerHTML = zbit;
+            units.ybit.innerHTML = ybit;
+            units.rbit.innerHTML = rbit;
+            units.qbit.innerHTML = qbit;
+
+            units.kibit.innerHTML = kibit;
+            units.mibit.innerHTML = mibit;
+            units.gibit.innerHTML = gibit;
+            units.tibit.innerHTML = tibit;
+            units.pibit.innerHTML = pibit;
+            units.eibit.innerHTML = eibit;
+            units.zibit.innerHTML = zibit;
+            units.yibit.innerHTML = yibit;
+            units.ribit.innerHTML = ribit;
+            units.qibit.innerHTML = qibit;
+
+            units.b.innerHTML = b;
+            units.dab.innerHTML = dab;
+            units.hb.innerHTML = hb;
+            units.kb.innerHTML = kb;
+            units.mb.innerHTML = mb;
+            units.gb.innerHTML = gb;
+            units.tb.innerHTML = tb;
+            units.pb.innerHTML = pb;
+            units.eb.innerHTML = eb;
+            units.zb.innerHTML = zb;
+            units.yb.innerHTML = yb;
+            units.rb.innerHTML = rb;
+            units.qb.innerHTML = qb;
+
+            units.kib.innerHTML = kib;
+            units.mib.innerHTML = mib;
+            units.gib.innerHTML = gib;
+            units.tib.innerHTML = tib;
+            units.pib.innerHTML = pib;
+            units.eib.innerHTML = eib;
+            units.zib.innerHTML = zib;
+            units.yib.innerHTML = yib;
+            units.rib.innerHTML = rib;
+            units.qib.innerHTML = qib;
+        };
+    </script>
+</body>
+</html>
