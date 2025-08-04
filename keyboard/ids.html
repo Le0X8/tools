@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard ID Viewer</title>
+
+  <style>
+    #output {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Keyboard ID Viewer</h1>
+
+  <p id="hide"><i>Press any key to see its ID...</i></p>
+
+  <table id="output">
+    <thead>
+      <tr>
+        <th id="key"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Global code</th>
+        <td id="code"></td>
+      </tr>
+      <tr>
+        <th>Numeric code</th>
+        <td id="keyCode"></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+    const output = document.getElementById('output');
+    const hide = document.getElementById('hide');
+    const keyElement = document.getElementById('key');
+    const codeElement = document.getElementById('code');
+    const keyCodeElement = document.getElementById('keyCode');
+
+    document.addEventListener('keydown', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      output.style.display = 'block';
+      hide.style.display = 'none';
+
+      keyElement.textContent = event.key || '';
+      codeElement.textContent = event.code || '';
+      keyCodeElement.textContent = event.keyCode || '';
+
+      console.log(event);
+    });
+
+    document.addEventListener('keyup', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+    });
+
+    document.addEventListener('keypress', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+    });
+  </script>
+</body>
+
+</html>
